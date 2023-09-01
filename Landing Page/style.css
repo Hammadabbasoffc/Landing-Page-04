@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html , body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: rgb(236, 224, 226); 
+}
+
+#nav{
+    height: 100px;
+    width: 100%;
+    /* background-color: red; */
+    /* position: relative; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid black;
+}
+
+#nav h5{
+    font-size: 15px;
+    border: 2px solid black;
+    border-radius: 50px;
+    padding: 4px 9px;
+    margin: 0 7px;
+    font-weight: 500;
+}
+
+#center{
+    height: calc(100% - 100px);
+    /* background-color: red; */
+    position: relative;
+    padding: 10px 20px;
+} 
+
+#center h1{
+    font-size: 110px;
+    text-transform: uppercase;
+    position: absolute;
+    left: 50%;
+    white-space: nowrap;
+    font-weight: 900;
+    font-style: italic;
+    transform: translate(-50% , 0);
+    z-index: 999;
+}
+
+#center h2{
+    font-size: 110px;
+    text-transform: uppercase;
+    position: absolute;
+    left: 49.9999999%;
+    top: 0px;
+    white-space: nowrap;
+    font-weight: 900;
+    font-style: italic;
+    color: transparent;
+    transform: translate(-50% , 0);
+    /* z-index: 999;
+     */
+
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 2px;
+}
+
+#image{
+    position: absolute;
+    top: 65%;
+    transform: translate(-50% , -50%);
+    left: 50%;
+    height: 50%;
+    width: 60%;
+    border: 2px solid black;
+    /* margin: 2px;
+    padding: 2px; */
+    border-radius: 50%;
+    /* background-color: red;
+     */
+}
+
+#image img{
+    height: 100%;
+    width: 100%;
+    /* left: -8; */
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    margin: auto;
+    padding: 20px;
+}
+
+button{
+    padding: 7px 32px;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+    position: absolute;
+    right: 10%;
+    top: 40%;
+    transform: rotate(-5deg);
+    margin: 10px 0px 0px 10px;
+    border-radius: 50%;
+    background-color: rgb(137, 231, 137);
+}
+button:hover{
+    color: rgb(106, 255, 0);
+    background-color: #fff;
+}
+
+#socks img{
+    height: 100%;
+    width: 100px;
+    background-size: cover;
+    object-fit: cover;
+    object-position:center ;
+    /* border: 2px solid red; */
+}
+
+#socks{
+    top: 44%;
+    right: 74%;
+    position: absolute;
+    /* border: 2px solid red; */
+    transform: rotate(7deg);
+}
